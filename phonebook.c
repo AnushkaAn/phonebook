@@ -86,7 +86,7 @@ void search(char *key, search_t type)
         }
     }
     else if(type == LAST_NAME) { // search by last name
-        for(i=0; i<currentSize; i++) {
+        for(i=0; i<currentSize; i++) { // this is a for loop
             strcpy(content, phonebook[i].lastName);
             strtolower(content);
 
